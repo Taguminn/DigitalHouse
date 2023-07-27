@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Liebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d11b542e83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<header>
+    <div class="top-header">
+        <div class="logo"> 
+            <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+        </div>
+        <form class="form" action="#" method="GET">
+            <input type="input" placeholder="Buscar productos, marcas y más">
+            <input type="submit" value="Buscar">
+        </form>
+        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul>
+            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+    <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+    </div>
+</header>
+<body>
+    <div class="center-text">
+        <h3>Ingresa tus datos</h3>
+    </div>
+    <div class="center">
+        <form action="/">
+            <label for="nombre">Nombre y Apellido</label><br>
+            <input type="text" pattern="[A-Za-z]{2,30}" id="nombre" name="nombre" required title="El nombre y apellido deben contener solo letras y tener entre 2 y 30 caracteres"><br><br>
+
+            <label for="user">Nombre de Usuario</label><br>
+            <input type="text" pattern="[A-Za-z0-9-]{3,15}" id="user" name="user" required title="El nombre de usuario debe contener entre 3 y 15 caracteres alfanuméricos, incluyendo guiones bajos (_) y guiones (-)"><br><br>
+
+            <label for="date">Fecha de nacimiento</label><br>
+            <input type="date" pattern="\d{2}-\d{2}-\d{4}" data="date" name="date" required title="Ingrese la fecha de nacimiento"><br><br>
+
+            <label for="dom">Domicilio</label><br>
+            <input type="text" pattern="[A-Za-z0-9\s]{5,50}" id="dom" name="dom" required title="El domicilio debe contener entre 5 y 50 caracteres alfanuméricos y espacios"><br><br>
+
+            <label for="consulta">Consulta</label><br><br>
+            Comprar   <input type="radio" id="consulta" name="consulta" required>
+            Vender<input type="radio" id="consulta" name="consulta" required><br><br>
+
+            <label for="interes">Categorias de interes</label><br><br>
+            Electro <input type="checkbox" id="interes" name="interes">
+            Moda <input type="checkbox" id="interes" name="interes">
+            Hogar <input type="checkbox" id="interes" name="interes">
+            Jugueteria <input type="checkbox" id="interes" name="interes">
+            Vida sana <input type="checkbox" id="interes" name="interes"><br><br>
+
+            <label for="foto">Foto</label><br>
+            <input type="file" id="foto" name="foto">
+            <input type="submit"><br><br>
+
+            <label for="clave">Contraseña</label><br>
+            <input type="password" pattern="^(?=.?[A-Z])(?=.?[a-z])(?=.*?[0-9]).{8,}$" id="clave" name="clave" required title="La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número y ser de al menos 8 caracteres"><br>Reconfirmar contraseña<br>
+            <input type="password" pattern="^(?=.?[A-Z])(?=.?[a-z])(?=.*?[0-9]).{8,}$" id="clave" name="clave" required><br><br>
+
+            <input type="submit" value="Registrarse">
+            <input type="reset" value="Borrar">
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="icon-footer">
+        <i class="fa-solid fa-credit-card" style="color: #1259C3;"></i><br>
+        <strong>Pagá con tarjeta o en efectivo</strong>
+        <br>
+        Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+     </div>
+     <div class="icon-footer">
+        <i class="fa-solid fa-gift" style="color: #1259C3;"></i><br>
+        <strong>Envío gratis desde los $2.500</strong>
+         <br>
+         Solo por estar registrado en Mercado Liebre tenes envios gratis en miles de productos. Es un beneficio de Mercado Liebre<br><h5>© 1999-2020 MercadoLiebre S.R.L.</h5>
+     </div>
+     <div class="icon-footer">
+         <i class="fa-solid fa-user-shield" style="color: #1259C3;"></i><br>
+         <strong>Seguridad de principio a fin</strong>
+         <br>
+         ¿No te gusta?¡devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estas siempre protegido.
+     </div>
+    </footer>
+</html>
